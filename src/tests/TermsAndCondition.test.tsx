@@ -23,7 +23,7 @@ describe('check if the page renders test and checkbox is working as espected', (
         expect(button).toBeDisabled()
     })
 
-    it('should enable the button when checkbox is clicked', async() => {
+    it('should enable the button when checkbox is clicked and also check if checkbox is enabled when clicked', async() => {
         const user = userEvent.setup()
 
         render(<TermsAndConditions />)
